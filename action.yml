@@ -1,0 +1,28 @@
+name: Retag image in GHCR
+author: kindaninja
+branding:
+  icon: hash
+  color: blue
+description: Retag an image and push it to GHCR
+inputs:
+  registry:
+    description: The registry to push the new tag later
+    required: true
+  image:
+    description: The name of the image you would like to retag
+    required: true
+  current_tag:
+    description: The old tag of the image you would like to retag
+    required: true
+  new_tag:
+    description: The new tag of the image you would like to retag
+    required: true
+  username:
+    description: The login username for the registry
+    required: true
+  password:
+    description: The login password for the registry
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
