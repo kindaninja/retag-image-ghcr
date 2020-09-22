@@ -2,8 +2,6 @@
 
 Retags an image and pushes the new tag to GHCR.
 
-Based on: [koraykoska/retag-docker-image](https://github.com/koraykoska/retag-docker-image)
-
 ## Usage
 
 Retagging a version for production
